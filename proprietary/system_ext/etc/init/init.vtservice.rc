@@ -8,8 +8,8 @@ service vtservice /system_ext/bin/vtservice
     ioprio rt 4
     disabled
 
-on property:persist.vendor.vilte_support=1
+on property:persist.vendor.vilte_support=0
     start vtservice
 
-on property:persist.vendor.viwifi_support=1
+on property:persist.vendor.viwifi_support=0
     start vtservice
